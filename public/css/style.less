@@ -1,0 +1,2189 @@
+// out: style.css, compress: true
+@import "less/bootstrap.less";
+@import "less/font-awesome/font-awesome.less";
+@import "less/animate.less";
+@import "./home.less";
+
+@bg:                    #26327a;
+@ie:                    #db2a3c;
+@ie-claro:              #e77069;
+@erro:                  #db2a3c;
+@amarelo:               #FEEC38;
+@azul:                  #337ab7;
+@vermelho:              #e52625;
+@verde:                 #177049;
+@roxo:                  #834898;
+@cinza:                 #4c4c4c;
+@preto:                 #000000;
+@branco:                #ffffff;
+
+/* --------------------------------------------------------- */
+/* ------------>>> CSS xs | 480px | Mobile <<<-------------- */
+/* --------------------------------------------------------- */
+@media (max-width: @screen-xs-max) {
+    .modal-ganhadores {
+        margin: 100px auto !important;
+        & .tt-ganhadores {
+            background-color: #fff;
+            -webkit-border-top-left-radius: 6px;
+            -webkit-border-top-right-radius: 6px;
+            -moz-border-radius-topleft: 6px;
+            -moz-border-radius-topright: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            & .titlePar {
+                color: #ec2027;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding: 15px 0 10px 0;
+                font-size: 25px;
+            }
+        }
+        & .table-mobile {
+            overflow-y: hidden;
+        }
+        & .close,
+        & .close:hover {
+            color: #ec2027 !important;
+        }
+
+        & .nav_tab {
+            margin-top: -40px;
+        }
+        & .nav-tabs > li {
+            margin-left: 3px;
+        }
+        & .nav-tabs > li > a {
+            border: 0px solid transparent;
+            background-color: #562921;
+            margin-right: 0px;
+            border-radius: 4px 4px 0 0;
+            text-transform: uppercase;
+            font-size: 12px;
+            &:hover,
+            &:focus {
+                color: #fff !important;
+                background-color: #562921 !important;
+                border: 0px solid transparent;
+            }
+        }
+        & li.active > a,
+        & li.active > a:hover,
+        & li.active > a:focus {
+            color: #fff !important;
+            background-color: #ec2027 !important;
+            border-radius: 4px 4px 0 0;
+        }
+        & .active {
+            color: #fff;
+            background-color: transparent;
+        }
+
+    }
+    .faixa{
+        position: fixed;
+        top: 222px;
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        padding: 60px 0;
+        font-size: 1.2em;
+        color: @branco;
+        img.encerramento{
+            width: 88%;
+        }
+    }
+    .modal-lg {
+        width: 80%;
+        margin-top: 8%;
+    }
+    .filme{
+        padding: 30px 0 20px 0;
+    }
+    .obrig{
+        background-color: red;
+        padding: 5px 15px;
+    }
+    .pgContato{
+        padding: 30px 0 10px 0;
+    }
+    .panel-group {
+        margin-bottom: 0;
+    }
+    .jspPane {
+        p { padding-right: 0px !important; }
+        p:last-child { margin: 0 0 0px !important;}
+    }
+    .panel-group .panel {
+        padding-right: 0px;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .formContato {
+        background: none !important;
+        background-color: #cb2127 !important;
+        background-image: none;
+    }
+    .formFAQ {
+        background: none !important;
+        background-color: @preto !important;
+        background-image: none;
+    }
+    .formMensagem {
+        background: none !important;
+        background-color: #cb2127 !important;
+        background-image: none;
+    }
+    .regulamento, .ganhadores, .faq {
+        & .textoScroll, .textoGanhadores, .textoFAQ {
+            min-height: 100% !important;
+            height: 100% !important;
+
+            & .jspVerticalBar {
+                display: none;
+            }
+        }
+    }
+    .panel-default>.panel-heading {
+        background-color: @preto !important;
+        border-color: @vermelho !important;
+    }
+    .bgRegulamento {
+        padding: 40px 5px;
+    }
+
+    .tesouraRegulamento {
+        position: absolute;
+        top: -50px;
+        left: 110px;
+        z-index: -1;
+    }
+    .blocosRegulamento {
+        position: absolute;
+        top: -300px;
+        right: 0px;
+        z-index: -1;
+    }
+    .faixa {
+        position: fixed;
+        top: 35%;
+        z-index: 1020;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 280px !important;
+    }
+}
+///////////////////////////////////////////////////////////////
+/* --------->>> FIM DO CSS xs | 480px | Mobile <<<---------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ------------>>> CSS sm | 768px | Tablet <<<-------------- */
+/* --------------------------------------------------------- */
+@media (min-width: @screen-sm-min) {
+    .modal-ganhadores {
+        width: 700px !important;
+        margin: 100px auto !important;
+        & .tt-ganhadores {
+            background-color: #fff;
+            -webkit-border-top-left-radius: 6px;
+            -webkit-border-top-right-radius: 6px;
+            -moz-border-radius-topleft: 6px;
+            -moz-border-radius-topright: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            & .titlePar {
+                color: #ec2027;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding: 15px 0 10px 0;
+            }
+        }
+        & .close,
+        & .close:hover {
+            color: #ec2027 !important;
+        }
+        & .nav_tab {
+            margin-top: -40px;
+        }
+        & .nav-tabs > li {
+            margin-left: 3px;
+        }
+        & .nav-tabs > li > a {
+            border: 0px solid transparent;
+            background-color: #562921;
+            margin-right: 0px;
+            border-radius: 4px 4px 0 0;
+            text-transform: uppercase;
+            &:hover,
+            &:focus {
+                color: #fff !important;
+                background-color: #562921 !important;
+                border: 0px solid transparent;
+            }
+        }
+        & li.active > a,
+        & li.active > a:hover,
+        & li.active > a:focus {
+            color: #fff !important;
+            background-color: #ec2027 !important;
+            border-radius: 4px 4px 0 0;
+        }
+        & .active {
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+    .faixa{
+        position: fixed;
+        top: 222px;
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        padding: 60px 0;
+        font-size: 1.2em;
+        color: @branco;
+        img.encerramento{
+            width: 72%;
+        }
+    }
+    .modal-lg {
+        width: 80%;
+        margin-top: 8%;
+    }
+    .filme{
+        padding: 30px 0 20px 0;
+    }
+    .obrig{
+        background-color: red;
+        padding: 5px 15px;
+    }
+    .pgContato{
+        padding: 30px 0 10px 0;
+    }
+    .panel-group {
+        margin-bottom: 0;
+    }
+    .jspPane {
+        p { padding-right: 25px !important; }
+        p:last-child { margin: 0 0 0px !important;}
+    }
+    .panel-group .panel {
+        padding-right: 25px;
+    }
+    .form-control {
+        width: 100%;
+    }
+
+    .formContato {
+        background: none !important;
+        background-color: #cb2127!important;
+        background-image: none;
+    }
+
+    .formFAQ {
+        background: none !important;
+        background-color: @preto !important;
+        background-image: none;
+    }
+
+    .formMensagem {
+        background: none !important;
+        background-color: #cb2127 !important;
+        background-image: none;
+    }
+
+    .regulamento {
+        & .textoScroll, .textoGanhadores {
+            height: 430px;
+            margin-bottom: 20px;
+        }
+    }
+    .ganhadores {
+        & .textoScroll, .textoGanhadores {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        & .textoFAQ  {
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    }
+    .faq {
+        & .textoScroll, .textoGanhadores {
+            height: 410px;
+            margin-bottom: 20px;
+        }
+
+        & .textoFAQ  {
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    }
+    .panel-default>.panel-heading {
+        background-color: @preto !important;
+        border-color: @vermelho !important;
+    }
+    .tesouraRegulamento {
+        position: absolute;
+        top: -50px;
+        left: 110px;
+        z-index: -1;
+    }
+    .blocosRegulamento {
+        position: absolute;
+        top: -300px;
+        right: 120px;
+        z-index: -1;
+    }
+}
+///////////////////////////////////////////////////////////////
+/* --------->>> FIM DO CSS sm | 768px | Tablet <<<---------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ------------>>> CSS md | 1200px | Desktop <<<------------- */
+/* --------------------------------------------------------- */
+@media (min-width: @screen-md-min) {
+    .modal-ganhadores {
+        width: 800px !important;
+        margin: 100px auto !important;
+        & .tt-ganhadores {
+            background-color: #fff;
+            -webkit-border-top-left-radius: 6px;
+            -webkit-border-top-right-radius: 6px;
+            -moz-border-radius-topleft: 6px;
+            -moz-border-radius-topright: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            & .titlePar {
+                color: #ec2027;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding: 15px 0 10px 0;
+            }
+        }
+        & .close,
+        & .close:hover {
+            color: #ec2027 !important;
+        }
+        & .nav_tab {
+            margin-top: -40px;
+        }
+        & .nav-tabs > li {
+            margin-left: 3px;
+        }
+        & .nav-tabs > li > a {
+            border: 0px solid transparent;
+            background-color: #562921;
+            margin-right: 0px;
+            border-radius: 4px 4px 0 0;
+            text-transform: uppercase;
+            &:hover,
+            &:focus {
+                color: #fff !important;
+                background-color: #562921 !important;
+                border: 0px solid transparent;
+            }
+        }
+        & li.active > a,
+        & li.active > a:hover,
+        & li.active > a:focus {
+            color: #fff !important;
+            background-color: #ec2027 !important;
+            border-radius: 4px 4px 0 0;
+        }
+        & .active {
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+    .navbar  {
+        text-align: center;
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+}
+
+.faixa{
+    position: fixed;
+    top: 95px;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+    font-size: 1.2em;
+    color: @branco;
+    img.encerramento{
+        width: 68%;
+    }
+}
+.modal-lg {
+    width: 80%;
+    margin-top: 8%;
+}
+.obrig{
+    background-color: transparent;
+    padding:0px;
+}
+.pgContato{
+    padding: 30px 0 10px 0;
+}
+.jspPane {
+    p { padding-right: 25px !important; }
+    p:last-child { margin: 0 0 0px !important;}
+}
+.panel-group .panel {
+    padding-right: 30px;
+}
+.form-control {
+    width: 95%;
+}
+.formContato {
+    background: none !important;
+    background-color: #cb2127 !important;
+    background-image: none;
+}
+.formFaq {
+    background: none !important;
+    background-color: @preto !important;
+    background-image: none;
+}
+.formMensagem {
+    background: none !important;
+    background-color: #cb2127 !important;
+    background-image: none;
+}
+.formMensagemPadding {
+    padding-top: 25px !important;
+}
+.regulamento {
+    & .textoScroll, .textoGanhadores {
+        height: 281px;
+        margin-bottom: 20px;
+    }
+}
+.ganhadores {
+    & .textoScroll, .textoGanhadores {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    & .textoFAQ  {
+        height: 280px;
+        margin-bottom: 20px;
+    }
+}
+.faq {
+    & .textoScroll, .textoGanhadores {
+        height: 292px;
+        margin-bottom: 20px;
+    }
+
+    & .textoFAQ  {
+        height: 280px;
+        margin-bottom: 20px;
+    }
+}
+.panel-default>.panel-heading {
+    background-color: #cb2127 !important;
+    border-color: @vermelho !important;
+}
+.bgRegulamentoTexto {
+    padding: 50px 50px 30px 50px;
+}
+.tesouraRegulamento {
+    position: absolute;
+    top: -50px;
+    left: 5000px;
+    z-index: -1;
+}
+.blocosRegulamento {
+    position: absolute;
+    top: -300px;
+    right: 5000px;
+    z-index: -1;
+}
+
+///////////////////////////////////////////////////////////////
+/* -------->>> FIM DO CSS md | 992px | Desktop <<<---------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ---------->>> CSS lg | 1200px | Desktop HD <<<----------- */
+/* --------------------------------------------------------- */
+@media (min-width: @screen-lg-min) {
+    .modal-ganhadores {
+        width: 800px !important;
+        margin: 100px auto !important;
+        & .tt-ganhadores {
+            background-color: #fff;
+            -webkit-border-top-left-radius: 6px;
+            -webkit-border-top-right-radius: 6px;
+            -moz-border-radius-topleft: 6px;
+            -moz-border-radius-topright: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            & .titlePar {
+                color: #ec2027;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding: 15px 0 10px 0;
+            }
+        }
+        & .close,
+        & .close:hover {
+            color: #ec2027 !important;
+        }
+
+        & .nav_tab {
+            margin-top: -40px;
+        }
+        & .nav-tabs > li {
+            margin-left: 3px;
+        }
+        & .nav-tabs > li > a {
+            border: 0px solid transparent;
+            background-color: #562921;
+            margin-right: 0px;
+            border-radius: 4px 4px 0 0;
+            text-transform: uppercase;
+            &:hover,
+            &:focus {
+                color: #fff !important;
+                background-color: #562921 !important;
+                border: 0px solid transparent;
+            }
+        }
+        & li.active > a,
+        & li.active > a:hover,
+        & li.active > a:focus {
+            color: #fff !important;
+            background-color: #ec2027 !important;
+            border-radius: 4px 4px 0 0;
+        }
+        & .active {
+            color: #fff;
+            background-color: transparent;
+        }
+
+    }
+    .navbar  {
+        text-align: center;
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .faixa{
+        position: fixed;
+        top: 32px;
+        z-index: 99999;
+        width: 100%;
+        height: 100%;
+        padding: 60px 0;
+        font-size: 1.2em;
+        color: @branco;
+        img.encerramento{
+            width: 64%;
+        }
+    }
+    .modal-lg {
+        width: 55%;
+        margin-top: 8%;
+    }
+    .container {
+        width: 1470px;
+    }
+    .faq {
+        & .textoScroll, .textoGanhadores {
+            height: 273px;
+            margin-bottom: 20px;
+        }
+
+        & .textoFAQ  {
+            height: 280px;
+            margin-bottom: 20px;
+        }
+    }
+    .premioFun {
+        margin-top: 0;
+        width: 55%;
+    }
+    .premioFunDois{
+        margin-top: 80px;
+        margin-left: 80px;
+        width: 44%;
+    }
+}
+///////////////////////////////////////////////////////////////
+/* -------->>> FIM DO CSS lg | 1200px | Desktop <<<--------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ------------>>> CSS lg | 1200px | IE11 <<<--------------- */
+/* --------------------------------------------------------- */
+
+//@media (min-width: @screen-lg-min) and (-ms-high-contrast: none), (-ms-high-contrast: active)
+//{
+//    *::-ms-backdrop, .Home_02 {
+//            position: absolute;
+//            bottom: 0;
+//            left: -130px !important;
+//            -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
+//            animation-delay: 0.3s;
+//        }
+//
+//    *::-ms-backdrop, .Home_03 {
+//        position: absolute;
+//        bottom: 0;
+//        margin-left: 194px !important;
+//        margin-bottom: 299px !important;
+//        -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
+//        animation-delay: 0.4s;
+//    }
+//
+//
+//}
+///////////////////////////////////////////////////////////////
+/* --------->>> FIM DO CSS lg | 1200px | IE11 <<<----------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* -------->>> INÍCIO DO CSS MEDIA 1520 a 1600 <<<---------- */
+/* --------------------------------------------------------- */
+@media (min-width: 1520px) and (max-width: 1600px) {
+
+}
+///////////////////////////////////////////////////////////////
+/* ----------->>> FIM DO CSS MEDIA 1520 a 1600<<<----------- */
+///////////////////////////////////////////////////////////////
+/* --------------------------------------------------------- */
+/* -------------->>> INÍCIO DO CSS GERAL <<<---------------- */
+/* --------------------------------------------------------- */
+@font-face {
+    font-family: 'PFDinTextPro-Regular';
+    src: url('../fonts/PFDinTextPro-Regular.eot');
+    src: url('../fonts/PFDinTextPro-Regular.woff2') format('woff2'),
+        url('../fonts/PFDinTextPro-Regular.woff') format('woff'),
+        url('../fonts/PFDinTextPro-Regular.ttf') format('truetype'),
+        url('../fonts/PFDinTextPro-Regular.svg#PFDinTextPro-Regular') format('svg'),
+        url('../fonts/PFDinTextPro-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.padding-off {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+html,
+body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0px solid #ddd;
+    -webkit-overflow-scrolling: touch;
+}
+.img-responsive {
+    display: inline-block !important;
+}
+.retira-margem {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.margin-top { margin-top: 10px; }
+.margin-top-5 { margin-top: 5px; }
+.margin-top-15 { margin-top: 15px; }
+.margin-top-20 { margin-top: 20px; }
+.margin-top-30 { margin-top: 30px; }
+.margin-top-40 { margin-top: 40px; }
+.margin-top-50 { margin-top: 50px; }
+.margin-top-54 { margin-top: 50px; }
+.margin-top-60 { margin-top: 60px; }
+.margin-top-65 { margin-top: 65px; }
+.margin-top-70 { margin-top: 70px; }
+.margin-top-80 { margin-top: 80px; }
+.margin-top-90 { margin-top: 90px; }
+.margin-top-100 { margin-top: 100px; }
+.margin-top-110 { margin-top: 110px; }
+.margin-top-120 { margin-top: 120px; }
+.margin-top-140 { margin-top: 140px; }
+.margin-top-150 { margin-top: 150px; }
+.margin-top-160 { margin-top: 160px; }
+.margin-top-200 { margin-top: 200px; }
+.margin-top-220 { margin-top: 220px; }
+.margin-top-330 { margin-top: 330px; }
+.margin-top-380 { margin-top: 380px; }
+.margin-top-385 { margin-top: 385px; }
+.margin-top-390 { margin-top: 390px; }
+.margin-top-400 { margin-top: 400px; }
+
+
+.font10 { font-size: 10px !important; }
+.font12 { font-size: 12px !important; }
+.font14 { font-size: 14px !important; }
+.font16 { font-size: 16px !important; }
+.font18 { font-size: 18px !important; }
+.font22 { font-size: 22px !important; }
+.font24 { font-size: 24px !important; }
+.font26 { font-size: 26px !important; }
+
+*, *:before, *:after {
+    outline: none !important;
+}
+
+a, a:hover, a:visited, a:active {
+    outline: none !important;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover { color: @branco; text-decoration: none; }
+
+a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+a img {
+    opacity: 1;
+}
+
+
+img:active {
+    border: none;
+    outline: none;
+}
+
+
+.modal-body {
+
+}
+#consultarNumeros{
+    background-color: #000;
+}
+.modal-content{
+    background-color: rgba(0,0,0,0.4);
+
+    .modal-header{
+        padding-bottom:
+            border:none !important;
+    }
+    .modal-body{
+        color: @branco !important;
+    }
+}
+
+.textosRegulamento {
+    text-align: center;
+    text-transform: uppercase;
+
+    p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+.tituloRegulamento {
+    background-color: @branco;
+    color: @preto;
+}
+
+.mensagemSucesso {
+    color: #E52625;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.encerrada {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 40px;
+    color: @branco;
+    z-index: 900;
+    font-size: 25px;
+    top: 35%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    span {
+        color: @vermelho;
+    }
+}
+
+.minHeightHome {
+    min-height: 80vh;
+}
+
+.btnHomePosition {
+    position: absolute;
+    right: 42%;
+    top: 85%;
+    background-color: transparent;
+    border:none;
+}
+.navbar {
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
+
+.barra-lateral{
+    margin-bottom: 0;
+}
+
+.subFAQ{
+    color: #fff;
+}
+
+.close{
+    color: #fdd714;
+}
+.close, .close:hover {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff !important;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 100;
+    filter: alpha(opacity=20);
+}
+///////////////////////////////////////////////////////////////
+/* ---------------->>> FIM DO CSS GERAL <<<----------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* -------------->>> INÍCIO DO CSS HEADER <<<--------------- */
+/* --------------------------------------------------------- */
+.menuTopo {
+    position: relative;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    height: 43px;
+    font-size: 18px;
+    .navbar-default{
+        border:none !important;
+        background-color: #562921;
+        //        background-size: cover;
+        margin-top: -6px;
+        height: 68px;
+        .navbar-nav{
+            padding: 10px 30px 0;
+        }
+        .navbar-nav > li{
+            border-right: 1px solid @branco;
+            height: 20px;
+            margin-top:14px;
+        }
+        .navbar-nav > li:nth-of-type(8n+0){
+            border:none !important;
+        }
+        .navbar-nav > li > a{
+            background-color:transparent;
+            color: @branco !important;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .navbar-nav > .active > a {
+            background-color:transparent;
+            color: @branco !important;
+            font-family: 'Ropa Sans', sans-serif;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar-nav > .active > a:hover {
+            color: @vermelho;
+        }
+
+
+        .navbar-nav > li > .active > a{
+            color: @vermelho !important;
+            font-weight: 400 !important;
+        }
+
+        .nav > li > a {
+            display:inline;
+        }
+    }
+}
+
+.menuBGOut { position: relative; }
+
+.menuBG {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #562921 !important;
+
+}
+
+.Ropa {
+    font-family: 'Ropa Sans', sans-serif;
+    color: @branco;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.menuMobile {
+    background-color: transparent !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1020;
+    .panel-group .panel {
+        margin-bottom: 0;
+        border-radius: 0px !important;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-right: 0px;
+    }
+    .logotipoTopo {
+        position: absolute;
+        top: -10px;
+        left: -70px;
+        z-index: 1000;
+    }
+    .panel-default>.panel-heading {
+        color: @branco;
+        padding: 20px 20px 40px 20px;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 20px;
+        text-align: center;
+    }
+    .navbar-nav>li {
+        float: none;
+        text-transform: uppercase;
+        font-family: 'Ropa Sans', sans-serif;
+        font-style: italic;
+        font-size: 18px
+    }
+}
+
+.nav > li > a:hover{
+    color: #ec2027;
+    background-color: transparent;
+}
+
+.nav > li > a:focus {
+    color: #ec2027;
+    background-color: transparent;
+}
+
+.active{
+    color: #ffffff;
+    background-color: #ec2027;
+}
+
+@media (max-width: 1199px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'PFDinTextPro-Regular';
+    }
+
+
+}
+
+@media (min-width: 1px) {
+    .bgTextoRegulamentoInterno {
+        padding: 50px 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .bgTextoRegulamentoInterno {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logotipoHome {
+        position: absolute;
+        left: -65px;
+    }
+
+    .melhoresSeries {
+        position: absolute;
+        left: -4005px;
+        top: 260px;
+    }
+
+    .carroHome {
+        position: absolute;
+        top: 250px;
+        right: -2000px;
+    }
+
+}
+
+@media (min-width: 1365px) {
+
+}
+
+@media (min-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1520px) {
+
+    .supMobile{
+        width: 100%;
+    }
+    .logoHome{
+        width:100% !important;
+    }
+    .nopadding{
+        padding: 0 !important;
+    }
+
+}
+@media screen and (max-width: 1330px) {
+
+
+}
+
+
+@media (min-width: 1520px) {
+
+
+}
+
+.textUppercase {
+    text-transform: uppercase !important;
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: @vermelho;
+    text-transform: uppercase;
+}
+
+.form-group {
+    ::-webkit-input-placeholder {
+        font-style: italic;
+        color: #aeaeae;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing:  0.3px;
+        color: #fff;
+        padding: 0 12px;
+    }
+    :focus::-webkit-input-placeholder {
+        color: @preto !important;
+    }
+
+    :-moz-placeholder {
+        font-style: italic;
+        color: #aeaeae;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing:  0.3px;
+        color: #fff;
+    }
+    :focus::-webkit-input-placeholder {
+        color: @preto !important;
+    }
+
+    ::-moz-placeholder {
+        font-style: italic;
+        color: #aeaeae;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing:  0.3px;
+        color: #fff;
+    }
+    :focus::-webkit-input-placeholder {
+        color: @preto !important;
+    }
+
+    :-ms-input-placeholder {
+        font-style: italic;
+        color: #aeaeae;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing:  0.3px;
+        color: #fff;
+    }
+    :focus::-webkit-input-placeholder {
+        color: @preto !important;
+    }
+}
+
+.formContato {
+    .form-control {
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        height: 30px;
+        width: 100%;
+        padding-left: 12px !important;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #fff;
+        background: 0 0!important;
+        background-color: transparent!important;
+        background-image: none;
+        border: 0 solid #ccc;
+        border-radius: 0;
+        -webkit-box-shadow: inset 0 0 0 transparent;
+        box-shadow: inset 0 0 0 transparent;
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .form-control:focus{
+        background-color: transparent!important;
+        color: #fff !important;
+        outline: none;
+    }
+}
+
+.form-controlMessage {
+    width: 100%;
+    color: #fff !important;
+}
+.form-controlMessage:focus{
+    background-color: transparent!important;
+}
+
+///////////////////////////////////////////////////////////////
+/* ---------------->>> FIM DO CSS HEADER <<<---------------- */
+///////////////////////////////////////////////////////////////
+
+
+/* --------------------------------------------------------- */
+/* -------------->>> INÍCIO DO CSS MODAIS <<<--------------- */
+/* --------------------------------------------------------- */
+
+
+.modalSkyLiunk {
+    background-color: @branco !important;
+
+    .modal-header{
+        padding-bottom: 0;
+        border: none!important;
+        min-height: 10px;
+        z-index: 5000;
+        right: 5px;
+        top: 5px;
+        position: absolute;
+
+        span{
+            color: @vermelho ! important;
+            font-size: 50px;
+        }
+
+    }
+
+    .modal-body {
+        padding: 60px !important;
+    }
+}
+
+.modal-content{
+    background-color: #ed1c24;
+
+    .modal-header{
+        padding-bottom: 0;
+        border: none!important;
+        min-height: 10px;
+        z-index: 5000;
+        right: 5px;
+        top: 5px;
+        position: absolute;
+
+        span{
+            color:@branco;
+            font-size: 40px;
+        }
+    }
+    .modal-body{
+        color: @branco !important;
+        padding: 40px !important;
+
+        h1{
+            color: @branco !important;
+        }
+        .text-center{
+            color: @vermelho !important;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////
+/* ----------------->>> FIM DO CSS MODAIS <<<--------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ------------->>> CSS GERAL DIVERSAS <<<------------------ */
+/* --------------------------------------------------------- */
+
+.oculto{
+    display: none !important;
+}
+
+
+/* --------------------------------------------------------- */
+/* ------------->>> INÍCIO DO CSS HOME <<<------------------ */
+/* --------------------------------------------------------- */
+
+.bgHome {
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+    .superSpce{
+        padding: 100px 0;
+    }
+
+    /****
+    ** Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+.logoHome{
+    width:80%;
+}
+
+.texCenter{
+    position: relative;
+    top: 160px;
+}
+.boxSpc{
+    position: relative;
+    top: 100px;
+}
+///////////////////////////////////////////////////////////////
+/* --------------->>> FIM DO CSS HOME <<<------------------- */
+///////////////////////////////////////////////////////////////
+
+
+/* --------------------------------------------------------- */
+/* ------------>>> INÍCIO DO CSS COMOPARTICIPAR <<<------------- */
+/* --------------------------------------------------------- */
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bgComoP{
+    background: url(../img/bgComoP.jpg) no-repeat bottom center;
+    //    background-size: cover !important;
+    min-height: 100vh;
+    padding: 80px 0 20px 0;
+    position: relative;
+    z-index: 2;
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+
+
+    /****
+    ** Page Como Participar
+    ****/
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: @vermelho;
+        font-size: 3em;
+        font-style: italic;
+        font-weight: bold
+    }
+    p{
+        color: @branco;
+        font-weight:normal
+    }
+    /****
+    ** Page Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+.comoFun {
+    margin-top: 60px;
+    width: 55%;
+}
+
+
+///////////////////////////////////////////////////////////////
+/* ------------->>> FIM DO CSS COMOPARTICIPAR <<<--------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ------------>>> INÍCIO DO CSS GANHADORES <<<------------- */
+/* --------------------------------------------------------- */
+.ganhadores{
+    //    background: url(../img/bgGanhadores.jpg) no-repeat top center;
+    //    padding: 80px 0 10px 0;
+    //    background-size: cover !important;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+    .titleParGanhadores{
+        text-transform: uppercase;
+        color: @vermelho;
+        font-size: 2em;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    /****
+    ** Page Como Participar
+    ***/
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: @vermelho;
+        font-size: 3em;
+        font-style: italic;
+        font-weight: bold
+    }
+    p{
+        color: @branco;
+        font-weight:normal
+    }
+    /****
+    ** Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+///////////////////////////////////////////////////////////////
+/* ------------->>> FIM DO CSS GANHADORES <<<--------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ------------->>> INÍCIO DO CSS PREMIOS <<<--------------- */
+/* --------------------------------------------------------- */
+.premio{
+    // background: url(../img/bgPremio.jpg) no-repeat top center;
+    // background-size: cover !important;
+    position: relative;
+    z-index: 2;
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+
+
+    /****
+    ** Page Como Participar
+    ****/
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: @vermelho;
+        font-size: 3em;
+        font-style: italic;
+        font-weight: bold
+    }
+    p{
+        color: @branco;
+        font-weight:normal
+    }
+    /****
+    ** Page Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+///////////////////////////////////////////////////////////////
+/* ---------------->>> FIM DO CSS PREMIOS <<<--------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* -------------->>> INÍCIO DO CSS CONTATO <<<-------------- */
+/* --------------------------------------------------------- */
+
+.pgContato{
+    //    background: url(../img/bgContato.jpg) no-repeat top center;
+    //    background-size: cover !important;
+    //    position: relative;
+    min-height: 100vh;
+
+    z-index: 2;
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+
+    /****** Page Como Participar ****/
+    h1.titlePar{
+        margin: 0;
+    }
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: #cb2027;
+        font-size: 25px;
+        //        font-style: italic;
+        //        font-weight: bold;
+    }
+    p.sub{
+        color: @branco;
+        font-weight:normal;
+        font-size: 20px;
+        margin: 0;
+        //        font-style: italic;
+    }
+    p.obrig{
+        color: @branco;
+        font-size:0.9em;
+        font-weight:normal;
+        line-height: 16px;
+        margin-left:14px;
+    }
+    /****
+    ** Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+.textoContato {
+
+    p {
+        text-transform: uppercase;;
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+.position-chevron {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.btnEnviar {
+    background-color: transparent !important;
+    border-width: 0px;
+    font-size: 20px;
+
+}
+.btnEnviar:hover {
+    color: #72141d;
+    background-color: transparent !important;
+    border-width: 0px;
+    font-size: 20px;
+}
+
+
+
+
+
+.form-control {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    height: 65px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.0);
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.0);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    textarea{
+        height: 140px !important;
+    }
+    textarea:focus{
+        height: 140px !important;
+        background-color: transparent!important;
+    }
+}
+
+.form-control:focus {
+    background-color: transparent!important;
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.0),0 0 0px rgba(102,175,233,.0);
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.0),0 0 0px rgba(102,175,233,.0);
+}
+//
+//#assunto {
+//    position: absolute;
+//    z-index: 2;
+//    -moz-appearance: none;
+//    -webkit-appearance: none;
+//    aparence: none;
+//    text-indent: 0.01px;
+//    text-overflow: '';
+//    padding-left: 24px !important;
+//    font-size: 12px;
+//    font-style: italic;
+//    color: @vermelho;
+//}
+#assunto {
+    padding-left: 23px !important;
+    font-size: 12px;
+    font-style: italic;
+    color: #ffffff;
+    background-color: #cb2027 !important;
+    z-index: 2;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    aparence: none;
+}
+@-moz-document url-prefix() {
+    #assunto  {
+        padding-left: 9px !important;
+    }
+}
+.assunto::-ms-expand {
+    display: none;
+}
+
+.assunto:-o-prefocus, .selector {
+    .styled-select { background: none; }
+}
+input,
+select,
+textarea {
+    font: inherit; /* 1 */
+    margin: 0; /* 2 */
+    text-transform: none;
+
+}
+
+
+.prendedorContato {
+    position: absolute;
+    top: -65px;
+    left: -3000px;
+    z-index: 100;
+}
+
+.canetaContato {
+    position: absolute;
+    margin-top: -30px;
+    left: 2000px;
+}
+///////////////////////////////////////////////////////////////
+/* --------------->>> FIM DO CSS CONTATO <<<---------------- */
+///////////////////////////////////////////////////////////////
+
+
+/* --------------------------------------------------------- */
+/* ----------->>> INÍCIO DO CSS Filme <<<------------- */
+/* --------------------------------------------------------- */
+.filme{
+    background: url(../img/bgFilmes.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+    .movie{
+        width:100%;
+        height:280px;
+        margin-left: 10px;
+    }
+
+    /****
+    ** Page Como Participar
+    ****/
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: #cb2027;
+        font-size: 2em;
+        font-style: italic;
+        font-weight: bold;
+    }
+    p{
+        color: @preto;
+        font-weight:normal;
+        font-size: 1.1em;
+        text-transform: none !important;
+        margin-left: 10px;
+    }
+    /****
+    ** Page Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+///////////////////////////////////////////////////////////////
+/* -------------->>> FIM DO CSS Filme <<<-------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ----------->>> INÍCIO DO CSS REGULAMENTO <<<------------- */
+/* --------------------------------------------------------- */
+.regulamento{
+    background: url(../img/bgRegulamento.jpg) no-repeat top center;
+    background-size: cover !important;
+    padding: 80px 0 10px 0;
+    position: relative;
+
+    z-index: 2;
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+
+    .bgTextoRegulamento {
+        background-color: rgba(0, 0, 0, 0.7);
+
+        p {
+
+            color: #c3c3c3;
+            padding: 0px;
+            font-size:0.9em;
+            font-weight:normal;
+            text-transform: none;
+            line-height: 16px;
+            text-align: left;
+
+        }
+    }
+
+    /****
+    ** Page Como Participar
+    ****/
+    h1.titlePar{
+        margin: 0;
+    }
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: #cb2027;
+        font-size: 3em;
+        font-style: italic;
+        font-weight: bold;
+    }
+    p.sub{
+        color: @branco;
+        font-weight:normal;
+        font-size: 2.4em;
+        margin: 0;
+    }
+    /****
+    ** Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+.box-regulamento{
+    background-color: #ed1c24;
+    padding: 10px;
+    & .texto-regulamento{
+        font-family: 'PFDinTextPro-Regular';
+        font-size: 14px;
+        color: @branco;
+        padding: 10px;
+        max-height: 450px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        & .table-responsive{
+            overflow-y: hidden;
+            overflow-x: hidden;
+            & table{
+                border: 2px solid @branco;
+            }
+            & tr{
+                border: 2px solid @branco;
+            }
+            & td{
+                border: 2px solid @branco;
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: transparent;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: @branco;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: @branco;
+    }
+}
+
+
+
+
+///////////////////////////////////////////////////////////////
+/* -------------->>> FIM DO CSS REGULAMENTO <<<-------------- */
+///////////////////////////////////////////////////////////////
+
+
+/* --------------------------------------------------------- */
+/* --------------------->>> CSS FAQ <<<--------------------- */
+/* --------------------------------------------------------- */
+
+.faq{
+    background: url(../img/bgFaq.jpg) no-repeat top right;
+    padding: 30px 0 20px 0;
+    //    background-size: cover !important;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+
+    .panel-group{
+        margin-top: 2px;
+    }
+    .panel-heading {
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+        border-radius: 0px !important;
+    }
+
+    .btnHome{
+        background-color: transparent;
+        border:none;
+    }
+    .movie{
+        width:100%;
+        height:280px;
+        margin-left: 10px;
+    }
+
+    /****  #ed1c24  ee1c25
+    ** Page Como Participar
+    ****/
+
+    h1.titlePar,
+    p{
+        text-transform: uppercase;
+        color: @vermelho;
+        font-size: 3em;
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+    p.subFaq{
+        color: @branco;
+        font-weight:normal !important;
+        font-size: 2.4em;
+    }
+    /****
+    ** Page Footer
+    ****/
+    .footerFixed{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+
+
+.m-left {
+    background-color: red;
+    padding: 3px 6px;
+    display: none;
+
+    .fa-chevron-down, .fa-caret-down { color: @preto; }
+}
+
+.footerMobile {
+    color: @branco;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: 'Ropa Sans',
+        sans-serif; font-style: italic;
+}
+
+.fa-caret-up, .fa-caret-down {
+    color: @preto;
+}
+
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f078";
+    float: right;
+}
+.accordion-opened .accordion-toggle:after {
+    content: "\f054";
+}
+
+.panel-default>.panel-heading {
+    color: @branco;
+    background-color: #cb2127 !important;
+    //    padding: 22px 0px 5px 0px;
+}
+
+.panel {
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0px !important;
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+
+.panel-group .panel-heading+.panel-collapse .panel-body {
+    border-top: 0px solid #ddd;
+}
+
+.panel-body {
+    padding: 5px 15px;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        color:@branco;
+        padding:10px;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        margin-top: -15px !important;
+    }
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    overflow: hidden;
+    //padding-right: 30px;
+}
+
+.reguaFaq {
+    position: absolute;
+    top: 20px;
+    right: 2000px;
+    z-index: -1;
+}
+
+.lapisFaq {
+    position: absolute;
+    top: 100px;
+    left: -2000px;
+    z-index: -1;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff !important;
+
+    strong{
+        display: none;
+    }
+}
+///////////////////////////////////////////////////////////////
+/* ------------------>>> FIM DO CSS FAQ <<<----------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* ----------->>> INÍCIO DO CSS COMO FUNCIONA <<<----------- */
+/* --------------------------------------------------------- */
+.canetaComo {
+    position: absolute;
+    top: -100px;
+    right: 1000px;
+    z-index: 20;
+}
+
+.marcadorComo {
+    position: absolute;
+    top: 50px;
+    left: -1000px;
+    z-index: -1;
+}
+///////////////////////////////////////////////////////////////
+/* ----------->>> FIM DO CSS COMO FUNCIONA <<<-------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* -------------->>> INÍCIO DO CSS GANHADORES <<<--------------- */
+/* --------------------------------------------------------- */
+.table-ganhadores {
+    & td,
+    & th {
+        text-transform: uppercase;
+        display: table-cell;
+        vertical-align: middle !important;
+        text-align: center !important;
+        font-size: 13px;
+    }
+    & th {
+        background-color: rgba(130,23,33,0.5);
+    }
+    thead > tr > th {
+        border-bottom-width: 0px !important;
+    }
+
+}
+.nav-tabs {
+    border-bottom: 0px solid #ddd;
+}
+///////////////////////////////////////////////////////////////
+/* --------------->>> FIM DO CSS GANHADORES <<<----------------- */
+///////////////////////////////////////////////////////////////
+
+/* --------------------------------------------------------- */
+/* --------------->>> CSS Atualiza IE <<<------------------- */
+/* --------------------------------------------------------- */
+.fundo-atualiza-ie {
+    background: @ie;
+    position: fixed;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+}
+
+.titulo-atualiza-navegador {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: @branco;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.texto-atualiza-navegador {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: @branco;
+    margin-bottom: 20px;
+}
+
+#browserlist:before, #browserlist:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#browserlist:after {
+    clear: both;
+}
+
+#browserlist {
+    clear: left;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
+
+    & a {
+        cursor: pointer;
+    }
+
+    & :hover {
+        text-decoration: none;
+    }
+}
+
+#browserlist li {
+    width: 192px;
+    float: left;
+    margin: 0;
+    position: relative;
+    right: 50%;
+}
+
+#browserlist li .icon {
+    width: 125px;
+    height: 135px;
+    margin: 0 auto 20px;
+    background: url(../img/browser-sprite.png) no-repeat;
+}
+
+#browserlist li#chrome .icon {
+    background-position: 0 0;
+}
+
+#browserlist li#firefox .icon {
+    background-position: -125px 0;
+}
+
+#browserlist li#opera .icon {
+    background-position: -250px 0;
+}
+
+#browserlist li#safari .icon {
+    background-position: -375px 0;
+}
+
+#browserlist li#ie .icon {
+    background-position: -500px 0;
+}
+
+#browserlist h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: @branco;
+    background-color: @ie-claro;
+    margin: 0 10px;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.panel-heading {
+    padding: 12px 15px;
+    border-bottom: 0px solid transparent;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+///////////////////////////////////////////////////////////////
+/* ------------->>> FIM DO CSS Atualiza IE <<<-------------- */
+///////////////////////////////////////////////////////////////
+.faixa {
+    position: fixed;
+    top: 35%;
+    z-index: 1020;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 150px;
+    .container {
+    }
+    .tt-faixa {
+        color: #FFF;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0;
+        font-family: 'PFDinTextPro-Regular';
+        span{
+            color:#ffc000;
+        }
+    }
+    .tt-faixa-2 {
+        color: #FFF;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0;
+        font-family: 'PFDinTextPro-Regular';
+        span{
+            color:#ffc000;
+        }
+    }
+}
+.btn-close-faixa {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}

@@ -1,0 +1,1259 @@
+@import "less/bootstrap.less";
+
+@branco:                #FFFFFF;
+@cinza:                 #4c4c4c;
+@azul:                  #0c89de;
+@azul-escuro:           #002e72;
+@azul-claro:            #e9e7fa;
+@vermelho:              #e31844;
+@vermelho-claro:        #e77069;
+@vermelho-escuro:       #ae0105;
+@amarelo:               #ffd800;
+@verde:                 #4cae4c;
+@verde-escuro:          #449d44;
+
+
+@media (max-width: @screen-xs-max)
+    {
+        /* very small*/
+        .navbar-nav > li > a {
+            color: @branco !important;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+            color: @branco !important;
+            background-color: @vermelho !important;
+        }
+
+        .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+            color: @branco !important;
+            background-color: @vermelho !important;
+        }
+
+        .brand-promo-xs {
+            font-family: 'Lobster Two', cursive;
+            color: @amarelo;
+            font-size: 18px;
+            margin: 10px;
+
+            & a {
+                color: @amarelo;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .navbar {
+            margin-top: 20px;
+        }
+
+        .navbar-default .navbar-toggle {
+            background: none !important;
+        }
+
+        .navbar-toggle {
+            background-color: none;
+            border: none;
+            border-radius: 0 !important;
+            float: right;
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+            padding: 16px 16px !important;
+            position: relative;
+
+            & .icon-bar {
+                background: @branco !important;
+            }
+        }
+
+        .modal-dialog {
+            background: @branco;
+            border-radius: 10px;
+            margin: 60px auto;
+            padding-bottom: 20px;
+
+             & .modal-header {
+                border-bottom: none;
+
+                & .fechar {
+                    float: right;
+                }
+            }
+
+            & .balao {
+                left: -60px;
+                position: absolute;
+                top: -50px;
+            }
+
+            & .bolhas {
+                left: -60px;
+                position: absolute;
+                bottom: -80px;
+                z-index: -1;
+            }
+
+            & .separa-borda {
+                border-right: 0;
+                min-height: 270px;
+                padding-left: 0;
+            }
+
+            & .titulo-modal {
+                color: @azul;
+                font-size: 24px;
+                font-family: 'Lobster Two', cursive;
+                font-style: italic;
+            }
+
+            & .img-modal {
+                text-align: center;
+            }
+
+            & label {
+                margin: 5px 0;
+            }
+        }
+
+        #vale-brinde, #vale-brinde-dados {
+
+            .modal-dialog {
+                background: @amarelo;
+                border-radius: 10px;
+                margin: 40px auto;
+                padding-bottom: 20px;
+
+                 & .modal-header {
+                    border-bottom: none;
+
+                    & .fechar {
+                        float: right;
+                    }
+                }
+
+                & .balao {
+                    left: -60px;
+                    position: absolute;
+                    top: -50px;
+                }
+
+                & .bolhas {
+                    left: -60px;
+                    position: absolute;
+                    bottom: -80px;
+                    z-index: -1;
+                }
+
+                & .separa-borda {
+                    border-left: 1px solid lighten(@cinza, 50%);
+                    min-height: 270px;
+                    padding-left: 30px;
+                }
+
+                & .titulo-modal-parabens {
+                    color: @vermelho;
+                    font-size: 36px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .titulo-modal {
+                    color: @vermelho;
+                    font-size: 24px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .img-modal {
+                    text-align: center;
+                }
+
+                & label {
+                    margin: 0 0 4px 0;
+                }
+
+                & .valesca {
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                }
+
+                & .texto-modal-premio {
+                    color: @vermelho;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .valesca {
+            margin-top: 10px;
+            float: right;
+        }
+
+        #vale-brinde-obrigado {
+
+            .modal-dialog {
+                background: @amarelo;
+                border-radius: 10px;
+                margin: 30px auto;
+                padding-bottom: 20px;
+
+                 & .modal-header {
+                    border-bottom: none;
+
+                    & .fechar {
+                        float: right;
+                    }
+                }
+
+                & .balao {
+                    left: -60px;
+                    position: absolute;
+                    top: -50px;
+                }
+
+                & .bolhas {
+                    left: -60px;
+                    position: absolute;
+                    bottom: -80px;
+                    z-index: -1;
+                }
+
+                & .separa-borda {
+                    border-left: 1px solid lighten(@cinza, 50%);
+                    min-height: 270px;
+                    padding-left: 30px;
+                }
+
+                & .titulo-modal-parabens {
+                    color: @vermelho;
+                    font-size: 50px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+
+                & .titulo-modal {
+                    color: @azul-escuro;
+                    font-size: 24px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .img-modal {
+                    text-align: center;
+                }
+
+                & label {
+                    margin: 0 0 4px 0;
+                }
+
+                & .valesca {
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                }
+
+                & .texto-modal-premio {
+                    color: @vermelho;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .meus-muneros, .ganhadores, .produtos-participantes {
+
+            & .texto {
+                height: 100%;
+
+                & .jspVerticalBar {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+
+@media (min-width: @screen-sm-min)
+    {
+        /* small*/
+        .navbar-nav > li > a {
+            font-family: 'Lobster Two', cursive;
+            color: @branco !important;
+            font-size: 14px;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-shadow: 2px 2px 0px darken(@vermelho, 20%);
+        }
+
+        .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+            color: @amarelo !important;
+            background-color: transparent !important;
+        }
+
+        .navbar-nav > .active  > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+            color: @amarelo !important;
+            background-color: transparent !important;
+        }
+
+        .navbar {
+            margin-top: 20px;
+        }
+
+        .modal-dialog {
+            background: @branco;
+            border-radius: 10px;
+            margin: 60px auto;
+            padding-bottom: 20px;
+
+             & .modal-header {
+                border-bottom: none;
+
+                & .fechar {
+                    float: right;
+                }
+            }
+
+            & .balao {
+                left: -60px;
+                position: absolute;
+                top: -50px;
+            }
+
+            & .bolhas {
+                left: -60px;
+                position: absolute;
+                bottom: -80px;
+                z-index: -1;
+            }
+
+            & .separa-borda {
+                border-left: 1px solid lighten(@cinza, 50%);
+                min-height: 270px;
+                padding-left: 30px;
+            }
+
+            & .titulo-modal {
+                color: @azul;
+                font-size: 24px;
+                font-family: 'Lobster Two', cursive;
+                font-style: italic;
+            }
+
+            & .img-modal {
+                text-align: center;
+            }
+
+            & label {
+                margin: 0 0 4px 0;
+            }
+        }
+
+        #vale-brinde, #vale-brinde-dados {
+
+            .modal-dialog {
+                background: @amarelo;
+                border-radius: 10px;
+                margin: 100px auto;
+                padding-bottom: 20px;
+
+                 & .modal-header {
+                    border-bottom: none;
+
+                    & .fechar {
+                        float: right;
+                    }
+                }
+
+                & .balao {
+                    left: -60px;
+                    position: absolute;
+                    top: -50px;
+                }
+
+                & .bolhas {
+                    left: -60px;
+                    position: absolute;
+                    bottom: -80px;
+                    z-index: -1;
+                }
+
+                & .separa-borda {
+                    border-left: 1px solid lighten(@cinza, 50%);
+                    min-height: 270px;
+                    padding-left: 30px;
+                }
+
+                & .titulo-modal-parabens {
+                    color: @vermelho;
+                    font-size: 36px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .titulo-modal {
+                    color: @vermelho;
+                    font-size: 24px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .img-modal {
+                    text-align: center;
+                }
+
+                & label {
+                    margin: 0 0 4px 0;
+                }
+
+                & .valesca {
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                }
+
+                & .texto-modal-premio {
+                    color: @vermelho;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        #vale-brinde-obrigado {
+
+            .modal-dialog {
+                background: @amarelo;
+                border-radius: 10px;
+                margin: 150px auto;
+                padding-bottom: 20px;
+
+                 & .modal-header {
+                    border-bottom: none;
+
+                    & .fechar {
+                        float: right;
+                    }
+                }
+
+                & .balao {
+                    left: -60px;
+                    position: absolute;
+                    top: -50px;
+                }
+
+                & .bolhas {
+                    left: -60px;
+                    position: absolute;
+                    bottom: -80px;
+                    z-index: -1;
+                }
+
+                & .separa-borda {
+                    border-left: 1px solid lighten(@cinza, 50%);
+                    min-height: 270px;
+                    padding-left: 30px;
+                }
+
+                & .titulo-modal-parabens {
+                    color: @vermelho;
+                    font-size: 50px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+
+                & .titulo-modal {
+                    color: @azul-escuro;
+                    font-size: 24px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .img-modal {
+                    text-align: center;
+                }
+
+                & label {
+                    margin: 0 0 4px 0;
+                }
+
+                & .valesca {
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                }
+
+                & .texto-modal-premio {
+                    color: @vermelho;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .valesca {
+            margin-top: 10px;
+            float: right;
+        }
+
+        .meus-numeros, .ganhadores, .perguntas-frequentes {
+
+            & .texto {
+                height: 410px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .produtos-participantes {
+
+            & .texto {
+                height: 390px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .perguntas-frequentes {
+
+            & .texto {
+                height: 420px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+@media (min-width: @screen-md-min)
+    {
+        /*large*/
+        .navbar-nav > li > a {
+            font-family: 'Lobster Two', cursive;
+            color: @branco !important;
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-shadow: 2px 2px 0px darken(@vermelho, 20%);
+        }
+
+        .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+            color: @amarelo !important;
+            background-color: transparent !important;
+        }
+
+        .navbar-nav > .active  > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+            color: @amarelo !important;
+            background-color: transparent !important;
+        }
+
+        .navbar {
+            margin-top: 20px;
+        }
+
+        .modal-dialog {
+            background: @branco;
+            border-radius: 10px;
+            margin: 60px auto;
+            padding-bottom: 20px;
+
+             & .modal-header {
+                border-bottom: none;
+
+                & .fechar {
+                    float: right;
+                }
+            }
+
+            & .balao {
+                left: -60px;
+                position: absolute;
+                top: -50px;
+            }
+
+            & .bolhas {
+                left: -60px;
+                position: absolute;
+                bottom: -80px;
+                z-index: -1;
+            }
+
+            & .separa-borda {
+                border-left: 1px solid lighten(@cinza, 50%);
+                min-height: 270px;
+                padding-left: 30px;
+            }
+
+            & .titulo-modal {
+                color: @azul;
+                font-size: 24px;
+                font-family: 'Lobster Two', cursive;
+                font-style: italic;
+            }
+
+            & .img-modal {
+                text-align: center;
+            }
+
+            & label {
+                margin: 0 0 4px 0;
+            }
+        }
+
+        #vale-brinde, #vale-brinde-dados {
+
+            .modal-dialog {
+                background: @amarelo;
+                border-radius: 10px;
+                margin: 100px auto;
+                padding-bottom: 20px;
+
+                 & .modal-header {
+                    border-bottom: none;
+
+                    & .fechar {
+                        float: right;
+                    }
+                }
+
+                & .balao {
+                    left: -60px;
+                    position: absolute;
+                    top: -50px;
+                }
+
+                & .bolhas {
+                    left: -60px;
+                    position: absolute;
+                    bottom: -80px;
+                    z-index: -1;
+                }
+
+                & .separa-borda {
+                    border-left: 1px solid lighten(@cinza, 50%);
+                    min-height: 270px;
+                    padding-left: 30px;
+                }
+
+                & .titulo-modal-parabens {
+                    color: @vermelho;
+                    font-size: 36px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .titulo-modal {
+                    color: @vermelho;
+                    font-size: 24px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .img-modal {
+                    text-align: center;
+                }
+
+                & label {
+                    margin: 0 0 4px 0;
+                }
+
+                & .valesca {
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                }
+
+                & .texto-modal-premio {
+                    color: @vermelho;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        #vale-brinde-obrigado {
+
+            .modal-dialog {
+                background: @amarelo;
+                border-radius: 10px;
+                margin: 150px auto;
+                padding-bottom: 20px;
+
+                 & .modal-header {
+                    border-bottom: none;
+
+                    & .fechar {
+                        float: right;
+                    }
+                }
+
+                & .balao {
+                    left: -60px;
+                    position: absolute;
+                    top: -50px;
+                }
+
+                & .bolhas {
+                    left: -60px;
+                    position: absolute;
+                    bottom: -80px;
+                    z-index: -1;
+                }
+
+                & .separa-borda {
+                    border-left: 1px solid lighten(@cinza, 50%);
+                    min-height: 270px;
+                    padding-left: 30px;
+                }
+
+                & .titulo-modal-parabens {
+                    color: @vermelho;
+                    font-size: 50px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+
+                & .titulo-modal {
+                    color: @azul-escuro;
+                    font-size: 24px;
+                    font-family: 'Lobster Two', cursive;
+                    font-style: italic;
+                }
+
+                & .img-modal {
+                    text-align: center;
+                }
+
+                & label {
+                    margin: 0 0 4px 0;
+                }
+
+                & .valesca {
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                }
+
+                & .texto-modal-premio {
+                    color: @vermelho;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .valesca {
+            margin-top: -50px;
+            float: right;
+        }
+
+        .meus-numeros, .perguntas-frequentes {
+
+            & .texto {
+                height: 570px;
+            }
+        }
+
+        .ganhadores {
+
+            & .texto {
+                height: 610px;
+            }
+        }
+
+        .produtos-participantes {
+
+            & .texto {
+                height: 530px;
+            }
+        }
+
+        .como-participar {
+
+            & .valesca {
+                margin-top: -150px;
+                margin-right: -60px;
+                float: right;
+            }
+        }
+    }
+
+body {
+    background: url(../img/bg.jpg) repeat-x center top @azul-claro;
+}
+
+/* atualiza IE */
+.fundo-atualiza-ie {
+    background: @vermelho;
+    position: fixed;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+}
+
+.titulo-atualiza-navegador {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: @branco;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.texto-atualiza-navegador {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: @branco;
+    margin-bottom: 20px;
+}
+
+#browserlist:before, #browserlist:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#browserlist:after {
+    clear: both;
+}
+
+#browserlist {
+    clear: left;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
+
+    & a {
+        cursor: pointer;
+    }
+
+    & :hover {
+        text-decoration: none;
+    }
+}
+
+#browserlist li {
+    width: 192px;
+    float: left;
+    margin: 0;
+    position: relative;
+    right: 50%;
+}
+
+#browserlist li .icon {
+    width: 125px;
+    height: 135px;
+    margin: 0 auto 20px;
+    background: url(../img/browser-sprite.png) no-repeat;
+}
+
+#browserlist li#chrome .icon {
+    background-position: 0 0;
+}
+
+#browserlist li#firefox .icon {
+    background-position: -125px 0;
+}
+
+#browserlist li#opera .icon {
+    background-position: -250px 0;
+}
+
+#browserlist li#safari .icon {
+    background-position: -375px 0;
+}
+
+#browserlist li#ie .icon {
+    background-position: -500px 0;
+}
+
+#browserlist h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: @branco;
+    background-color: @vermelho-claro;
+    margin: 0 10px;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+/* inicio */
+.img-responsive {
+    display: inline-block !important;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.retira-margem {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.btn {
+    white-space: normal;
+}
+
+.navbar-default {
+  background: url(../img/bg-navbar.jpg) repeat-x center top @vermelho-escuro;
+  border-color: transparent;
+  border-radius: 15px;
+
+  .navbar-brand {
+    color: @navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      background-color: @navbar-default-brand-hover-bg;
+    }
+  }
+}
+
+.texto-menu {
+    color: @branco;
+    font-size: 12px;
+    float: right;
+    line-height: 14px;
+    margin: 10px;
+}
+
+.botao-menu {
+    float: right;
+    margin: 10px 0;
+
+    & .btn-info {
+        box-shadow: 2px 2px 0px darken(@vermelho, 10%);
+    }
+}
+
+.btn-info {
+    background-color: @azul;
+    background-image: -moz-linear-gradient(center top , @azul, darken(@azul, 10%));
+    background-image: -webkit-linear-gradient(center top , @azul, darken(@azul, 10%));
+    background-image: linear-gradient(center top , @azul, darken(@azul, 10%));
+    border: 1px solid darken(@azul, 15%);
+    color: @branco;
+    text-shadow: 2px 2px 0px darken(@azul, 20%);
+
+    &:hover {
+        background-color: @azul-escuro;
+        background-image: -moz-linear-gradient(center top , darken(@azul, 10%), darken(@azul, 20%));
+        background-image: -webkit-linear-gradient(center top , darken(@azul, 10%), darken(@azul, 20%));
+        background-image: linear-gradient(center top , darken(@azul, 10%), darken(@azul, 20%));
+        border: 1px solid darken(@azul, 25%);
+    }
+}
+
+.btn-danger {
+    background-color: @vermelho;
+    background-image: -moz-linear-gradient(center top , @vermelho, darken(@vermelho, 10%));
+    background-image: -webkit-linear-gradient(center top , @vermelho, darken(@vermelho, 10%));
+    background-image: linear-gradient(center top , @vermelho, darken(@vermelho, 10%));
+    border: 1px solid darken(@vermelho, 15%);
+    color: @branco;
+    text-shadow: 2px 2px 0px darken(@vermelho, 20%);
+
+    &:hover {
+        background-color: @vermelho-escuro;
+        background-image: -moz-linear-gradient(center top , darken(@vermelho, 10%), darken(@vermelho, 20%));
+        background-image: -webkit-linear-gradient(center top , darken(@vermelho, 10%), darken(@vermelho, 20%));
+        background-image: linear-gradient(center top , darken(@vermelho, 10%), darken(@vermelho, 20%));
+        border: 1px solid darken(@vermelho, 25%);
+    }
+}
+
+.btn-success {
+    background-color: @verde;
+    background-image: -moz-linear-gradient(center top , @verde, darken(@verde, 10%));
+    background-image: -webkit-linear-gradient(center top , @verde, darken(@verde, 10%));
+    background-image: linear-gradient(center top , @verde, darken(@verde, 10%));
+    border: 1px solid darken(@verde, 15%);
+    color: @branco;
+    text-shadow: 2px 2px 0px darken(@verde, 20%);
+
+    &:hover {
+        background-color: @verde-escuro;
+        background-image: -moz-linear-gradient(center top , darken(@verde, 10%), darken(@verde, 20%));
+        background-image: -webkit-linear-gradient(center top , darken(@verde, 10%), darken(@verde, 20%));
+        background-image: linear-gradient(center top , darken(@verde, 10%), darken(@verde, 20%));
+        border: 1px solid darken(@verde, 25%);
+    }
+}
+
+#cliente_cep {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#busca-cep {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.menu-inferior {
+    background: url(../img/bg-navbar.jpg) repeat-x center top @vermelho-escuro;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    text-align: center;
+
+    & a {
+        margin: 0 10px;
+        text-align: center;
+        font-family: 'Lobster Two', cursive;
+        color: @branco;
+        font-size: 18px;
+        text-shadow: 2px 2px 0px darken(@vermelho, 20%);
+
+        &:hover {
+            color: @amarelo;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: @amarelo;
+        }
+    }
+
+    & .balao-esquerda {
+        left: -65px;
+        position: absolute;
+        top: -60px;
+        z-index: 100;
+    }
+
+    & .balao-direita {
+        position: absolute;
+        right: -30px;
+        top: -35px;
+        z-index: 100;
+    }
+}
+
+.texto-legal {
+    background: url(../img/bg-texto-legal.jpg) repeat-x center top @azul-escuro;
+    color: @branco;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.cadastro, .cadastro-cupom, .fale-conosco {
+    color: @azul-escuro;
+}
+
+.has-feedback .form-control-feedback {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 30px;
+}
+
+.erro {
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: @vermelho-escuro;
+}
+
+label {
+    margin: 10px 0 5px 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.captcha-img {
+    background: @branco;
+    text-align: center;
+}
+
+.captcha {
+    color: @azul-escuro;
+    font-size: 12px;
+    margin: 5px 0;
+
+    &:hover {
+        color: @azul;
+        text-decoration: none;
+    }
+}
+
+.texto-regulamento, .texto {
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    & li {
+        margin-bottom: 10px;
+        background-color: @vermelho;
+        background-image: -webkit-linear-gradient(@vermelho, darken(@vermelho, 10%));
+        background-image: -o-linear-gradient(@vermelho, darken(@vermelho, 10%));
+        background-image: linear-gradient(@vermelho, darken(@vermelho, 10%));
+        padding: 10px;
+        border-radius: 5px;
+        width: 95%;
+
+        & img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        & .produto, .ganhador {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: @amarelo;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        & .cidade {
+            font-size: 14px;
+            color: @amarelo;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        & .numero-sorte {
+            text-transform: none;
+            color: @branco;
+        }
+
+        .em-validacao {
+            color: @branco;
+        }
+    }
+
+    & a {
+        color: @cinza;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+
+    & h2 {
+        color: @vermelho;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+    }
+
+    & hr {
+        border-top: 1px solid lighten(@cinza, 40%);
+        border-bottom: 1px solid @branco;
+    }
+}
+
+.codigo-barras {
+    position: absolute;
+    right: -20px;
+    top: -15px;
+    z-index: -1;
+}
+
+.home, .premios, .erro {
+    margin-top: -20px;
+}
+
+.alterar-senha, .cadastro-cupom {
+    label {
+        color: @azul-escuro;
+    }
+
+    .mensagens {
+        padding: 15px;
+        border-radius: 10px;
+        color: @branco;
+        font-size: 18px;
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+
+        & span {
+            margin-top: 4px;
+        }
+
+        &.sucesso {
+            background-color: @verde;
+            background-image: -moz-linear-gradient(center top , @verde, darken(@verde, 10%));
+            background-image: -webkit-linear-gradient(center top , @verde, darken(@verde, 10%));
+            background-image: linear-gradient(center top , @verde, darken(@verde, 10%));
+            text-shadow: 2px 2px 0px darken(@verde, 20%);
+        }
+
+        &.erro {
+            background-color: @vermelho;
+            background-image: -moz-linear-gradient(center top , @vermelho, darken(@vermelho, 10%));
+            background-image: -webkit-linear-gradient(center top , @vermelho, darken(@vermelho, 10%));
+            background-image: linear-gradient(center top , @vermelho, darken(@vermelho, 10%));
+            text-shadow: 2px 2px 0px darken(@vermelho, 20%);
+        }
+    }
+}
+
+.perguntas-frequentes {
+
+    & .texto {
+        & p {
+            margin-left: 20px;
+
+            & h4 {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.como-participar {
+    & .texto-regulamento {
+        color: @azul-escuro;
+
+        & span {
+            color: @vermelho;
+            font-weight: bold;
+        }
+
+        & hr {
+            border-top: 1px solid lighten(@cinza, 40%);
+            border-bottom: 1px solid @branco;
+        }
+    }
+}
+
+.aplicativos {
+    padding: 30px 0;
+    text-align: center;
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    & li {
+        display: inline-table;
+        padding: 5px;
+    }
+}
